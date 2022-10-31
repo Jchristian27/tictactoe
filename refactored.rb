@@ -6,32 +6,6 @@ class Player
   end
 end
 
-class Board 
-  def initialize
-    @i = "1"
-    @ii = "2"
-    @iii = "3"
-    @iv = "4"
-    @v = "5"
-    @vi = "6"
-    @vii = "7"
-    @viii = "8"
-    @ix = "9"
-    @legal_numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    @board = "
-    #{@i} | #{@ii} | #{@iii}
-    ---+---+---
-    #{@iv} | #{@v} | #{@vi}
-    ---+---+---
-    #{@vii} | #{@viii} | #{@ix}
-    \n\n"
-    @winning_combos = [[@i, @ii, @iii], [@iv, @v, @vi], [@vii, @viii, @ix], 
-                      [@i, @iv, @vii], [@ii, @v, @viii], [@iii, @vi, @ix], 
-                      [@i, @v, @ix], [@iii, @v, @vii]]
-  end
-end
-
-
 class Game 
   def initialize(player1, player2)
     @player1 = player1.name
