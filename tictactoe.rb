@@ -140,15 +140,3 @@ until p2_marker.length == 1 && p2_marker != p1_marker
 end
 
 Game.new(p1_name, p1_marker, p2_name, p2_marker).play_game()
-
-puts "Would you like to play again?"
-puts "Enter 'y' to play again or 'n' to quit"
-answer = gets.chomp.downcase
-
-if answer == 'y'
-  true
-elsif answer == 'n'
-  system("clear")
-else 
-  puts "Uh oh. Something went wrong."
-end
