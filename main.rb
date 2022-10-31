@@ -1,5 +1,5 @@
 # require_relative 'tictactoe.rb'
-require_relative 'ttt-refactor.rb'
+require_relative 'refactored.rb'
 
 puts "Let's play a simple Tic-Tac-Toe game in the console!"
 
