@@ -1,5 +1,7 @@
-# require_relative 'tictactoe.rb'
-require_relative 'refactored.rb'
+require_relative 'player.rb'
+require_relative 'board.rb'
+require_relative 'game.rb'
+
 
 puts "Let's play a simple Tic-Tac-Toe game in the console!"
 
@@ -27,4 +29,4 @@ end
 p2 = Player.new(p2_name, p2_marker)
 
 
-Game.new(p1, p2).play_game()
+Game.new(p1, p2).play_game
