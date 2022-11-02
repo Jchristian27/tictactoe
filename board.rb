@@ -1,5 +1,6 @@
 class Board
-  attr_accessor :board_values, :legal_numbers, :winning_combos
+  attr_accessor :board_values, :legal_numbers
+  attr_reader :winning_combos
   def initialize
     @board_values = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
     @legal_numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
